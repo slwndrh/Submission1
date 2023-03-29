@@ -13,8 +13,6 @@ import com.example.submission1.databinding.FragmentFollowBinding
 class FollowFragment : Fragment() {
     private lateinit var binding: FragmentFollowBinding
     private lateinit var detailViewModel: DetailViewModel
-    private var listFollower = ArrayList<String>()
-    private var listFollowing = ArrayList<String>()
 
     companion object{
         const val ARG_POSITION = "position"

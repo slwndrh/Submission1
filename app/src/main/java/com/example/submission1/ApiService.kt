@@ -11,16 +11,16 @@ interface ApiService {
 
     @GET("users/salwa")
     fun getDetailUser(
-        @Query("salwa") salwa: String
+        @Query("salwa") login: String
     ): Call<DetailUserResponse>
 
     @GET("users/salwa/followers")
     fun getFollowers(
-        @Query("salwa") salwa: String
+        @Query("salwa") login: String
     ): Call<List<ItemsItem>>
 
     @GET("users/salwa/following")
     fun getfollowing(
-        @Query("salwa") salwa: String
+        @Query("salwa") login: String
     ): Call<List<ItemsItem>>
 }

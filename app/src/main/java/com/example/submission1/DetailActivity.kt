@@ -71,8 +71,8 @@ class DetailActivity : AppCompatActivity() {
             .load(Name.avatarUrl)
             .into(binding.ivDetailuser)
         binding.tvUserlogin.text = Name.login
-        binding.tvName.text = Name.bio as CharSequence?
-        binding.tvFollower.text = Name.followersUrl
-        binding.tvFollowing.text = Name.followingUrl
+        binding.tvName.text = Name.name.toString()
+        binding.tvFollower.text = Name.followers.toString()
+        binding.tvFollowing.text = Name.following.toString()
     }
 }
